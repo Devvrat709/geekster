@@ -43,13 +43,42 @@
 // 27th Jan 2022 
 
 // Assignment 1
-var inputArray = prompt("size");
- var elements = []
+// var inputArray = prompt("size");
+//  var elements = []
 
-for(var i=0; i<inputArray; i++) {
-	elements[i] = prompt('Enter Element ');
+// for(var i=0; i<inputArray; i++) {
+// 	elements[i] = prompt('Enter Element ');
+// }
+// elements.sort((a,b)=>{
+//     return a-b
+// })
+// console.log('maximun number is:- ',elements[elements.length-1])
+
+
+
+// 28th Jan 2022
+// Assingment 1 - Reverse the order of numbers
+
+
+// var noOfElemets = prompt("Enter the number of elements")
+// var array = []
+// for(var i = 0; i<noOfElemets; i++){
+//     array[i]= prompt("Enter the elements")
+//     console.log(array[i])
+
+// }
+// console.log("reversed array" ,array.reverse())
+
+// Assingments 2 - print n fibonacci series
+var noOfElemets = prompt("Enter the number of elements of series")
+parseInt(noOfElemets)
+var firstElement = 0 
+var secondElement = 1 
+console.log(firstElement)
+console.log(secondElement)
+for( var i = 0 ; i <= noOfElemets; i++){
+    var temp = firstElement + secondElement
+    firstElement = secondElement
+    secondElement = temp
+    console.log(temp)
 }
-elements.sort((a,b)=>{
-    return a-b
-})
-console.log('maximun number is:- ',elements[elements.length-1])
